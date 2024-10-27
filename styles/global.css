@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.loader {
+  font-size: 48px;
+  display: inline-block;
+  letter-spacing: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+  box-sizing: border-box;
+  animation: animloader 1s ease-in infinite alternate;
+}
+
+@keyframes animloader {
+  0% {
+    filter: blur(0px);
+    transform: skew(0deg);
+  }
+  100% {
+    filter: blur(3px);
+    transform: skew(-4deg);
+  }
+}
+
+.loader-wrapper {
+  display: flex;
+  justify-content: center; /* Yatay ortalama */
+  align-items: center; /* Dikey ortalama */
+  height: 100vh; /* Ekranın tamamını kapsasın */
+  width: 100vw;
+  background-color: rgb(215, 215, 202);
+}
+
+.login-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
